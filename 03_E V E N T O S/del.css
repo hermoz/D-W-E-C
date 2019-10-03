@@ -1,0 +1,20 @@
+a.menu_links {
+    cursor: pointer;
+}
+
+.gallery {
+      display: grid;
+  		grid-template-columns: auto auto auto;
+}
+
+.gallery__item {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.red{
+	background: red;
+}
