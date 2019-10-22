@@ -1,0 +1,52 @@
+<!-- 
+1.Crea la base de datos que se proporciona en el archivo marvel.sql
+2.Interpreta el código marvel.php y colócalo en el servidor y utilízalo cuando creas conveniente.
+3.Crea una página html que muestre 
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AJAX</title>
+  </head>
+  <body>
+    <h1 id="title">Marvel</h1>
+      <!-- Creamos formulario para recogida de datos -->
+      <form id="form" action="marvel.php">
+        <div>
+        <!-- Un campo de tipo select donde deberán mostrarse los superheroes que hay cargados en la base de datos. -->
+            <select id="alignmentSelect" name="alignmentSelect"></select>
+          <!--RECORDAMOS QUE SELECT TIENE option
+          <select>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+          </select>
+          -->        
+          <br>
+            <input type="radio" name="gender" id="male" value="male" checked> Male<br>
+            <input type="radio" name="gender" id="female" value="female"> Female<br>
+          <br>
+
+        <!-- Crea un BOTON DE TIPO SUBMIT que se llame "Get Data" -->
+        <!-- <button type="submit" id="getData">Get Data</button> -->
+        <input id="boton" type="submit" value="GetData">
+        </div>
+      </form>
+    <br>
+    <br>
+
+    <!-- Un tabla cuyos títulos sean: Name, Gender, Fighting Skills-->
+    <table id="tabla" border="1px">
+      <tr>
+        <td>Name</td>
+        <td>Alignment</td>
+        <td>Gender</td>
+      </tr>
+    </table>
+    <br>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
